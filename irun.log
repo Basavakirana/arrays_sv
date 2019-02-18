@@ -1,35 +1,42 @@
 irun(64): 15.20-s051: (c) Copyright 1995-2018 Cadence Design Systems, Inc.
-TOOL:	irun(64)	15.20-s051: Started on Mar 07, 2019 at 03:32:48 IST
+TOOL:	irun(64)	15.20-s051: Started on Feb 18, 2019 at 22:31:08 IST
 irun
 	-access +rwc
-	array1.sv
+	array_methods.sv
+Recompiling... reason: file './array_methods.sv' is newer than expected.
+	expected: Mon Feb 18 22:30:09 2019
+	actual:   Mon Feb 18 22:31:06 2019
+file: array_methods.sv
+	module worklib.test:sv
+		errors: 0, warnings: 0
 		Caching library 'worklib' ....... Done
 	Elaborating the design hierarchy:
 	Top level design units:
-		array1
+		test
 ncelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
 	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.test:sv <0x333f568d>
+			streams:   2, words: 14625
 	Building instance specific data structures.
 	Loading native compiled code:     .................... Done
 	Design hierarchy summary:
 		         Instances  Unique
 		Modules:         1       1
-		Registers:       3       3
+		Registers:       2       2
 		Initial blocks:  2       2
-	Writing initial simulation snapshot: worklib.array1:sv
-Loading snapshot worklib.array1:sv .................... Done
+	Writing initial simulation snapshot: worklib.test:sv
+Loading snapshot worklib.test:sv .................... Done
 ncsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
 ncsim> source /tools/cadence/INCISIVE152/tools/inca/files/ncsimrc
 ncsim> run
-mda[          0]          0] =           0 
-mda[          0]          1] =           1 
-mda[          0]          2] =           2 
-mda[          1]          0] =           3 
-mda[          1]          1] =           4 
-mda[          1]          2] =           5 
-mda[          2]          0] =           6 
-mda[          2]          1] =           7 
-mda[          2]          2] =           8 
+          0
+'{0}
+'{0}
+'{}
+'{}
+'{}
+'{}
 ncsim: *W,RNQUIE: Simulation is complete.
 ncsim> exit
-TOOL:	irun(64)	15.20-s051: Exiting on Mar 07, 2019 at 03:32:48 IST  (total: 00:00:00)
+TOOL:	irun(64)	15.20-s051: Exiting on Feb 18, 2019 at 22:31:08 IST  (total: 00:00:00)
