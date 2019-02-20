@@ -8,7 +8,7 @@ module array1();
         begin
   //          begin
             foreach(mda[i,j])
-                $display("mda[%d]%d] = %d ",i,j,mda[i] [j]);
+                $display("mda[%d][%d] = %d ",i,j,mda[i] [j]);
   //          end
   //          $displayh(bytes,bytes[2],bytes[1][2],bytes[1][2][2]);
          end
